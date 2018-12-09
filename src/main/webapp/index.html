@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Start page</title>
+
+<style type="text/css">
+
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+	background-color:Tomato
+}
+
+.elements{
+	text-align: center;
+	display: inline;
+}
+
+#info_new_ul li {
+   display: inline-block;
+}
+
+</style>
+
+</head>
+<body>
+
+	<a href = "dbconnection.jsp" >DBConnection Test</a>
+
+  <div class="table">
+
+	<ul class = "elements" id="info_new_ul">
+		<li>Coffee123</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ul>
+	
+  </div>
+
+	<div style="position: absolute; left: 150px;">Hello World</div>
+	
+	<br>
+	<br>
+
+	<form action="addservice">
+
+		Enter first number: <input type="text" name="num1"> <br>
+		Enter second number: <input type="text" name="num2"> <br>
+		<input type="submit">
+
+	</form>
+
+	<br>
+	<br>
+	<br>
+
+	<form action="createuser">
+
+		Enter first name: <input type="text" name="firstname"> <br>
+		Enter last name: <input type="text" name="lastname"> <br>
+		Enter mail address: <input type="text" name="mail"> <br>
+		Create user name: <input type="text" name="username"> <br>
+		<input type="submit">
+
+	</form>
+
+</body>
+</html>

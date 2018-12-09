@@ -1,0 +1,4 @@
+user=trainee
+pass=trainee
+hostname=jdbc:mysql://localhost:3306/springdata420
+dbclass=com.mysql.cj.jdbc.Driver
