@@ -1,5 +1,7 @@
-<!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app 
+ PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
@@ -8,9 +10,10 @@
 
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
-
-	<servlet>
+	
+<!-- 	<servlet>
 		<servlet-name>add</servlet-name>
 		<servlet-class>com.add.AddServlet</servlet-class>
 	</servlet>
@@ -18,9 +21,9 @@
 	<servlet-mapping>
 		<servlet-name>add</servlet-name>
 		<url-pattern>/addservice</url-pattern>
-	</servlet-mapping>
+	</servlet-mapping> -->
 
-	<servlet>
+<!-- 	<servlet>
 		<servlet-name>createuser</servlet-name>
 		<servlet-class>com.userhandler.CreateUserServlet</servlet-class>
 	</servlet>
@@ -28,6 +31,6 @@
 	<servlet-mapping>
 		<servlet-name>createuser</servlet-name>
 		<url-pattern>/createuser</url-pattern>
-	</servlet-mapping>
+	</servlet-mapping> -->
 
 </web-app>

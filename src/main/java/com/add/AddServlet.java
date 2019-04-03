@@ -6,8 +6,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.domain.Customer;
-import com.persistence.CustomerSpringDataDaoImpl;
+import com.domain.User;
 
 public class AddServlet extends HttpServlet {
 
@@ -21,20 +20,12 @@ public class AddServlet extends HttpServlet {
 		int i = Integer.parseInt(req.getParameter("num1"));
 		int j = Integer.parseInt(req.getParameter("num2"));
 		
-		int l = i;
-		int k = i + l;
+		int k = i + j;
 		
-		res.getWriter().println("The result is " + k + "!!!11elf");
-		
-		try {
-			Customer cust = new Customer();
-			CustomerSpringDataDaoImpl daoservice = new CustomerSpringDataDaoImpl();
-			cust = daoservice.getCustomerById(3L);
-			res.getWriter().println(cust.getFirstName());
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		if(i == 1)
+			res.getWriter().println("<h1 style=\"background-color:DodgerBlue;\">The result is</h1> " + k + " and i is 1");
+		else
+			res.getWriter().println("The result is " +  k + " and i is not 1");
 		
 	}
 
