@@ -18,6 +18,7 @@ public class User {
 	private String firstName;
 	private String lastName;
 	private String password;
+	private String mailaddress;
 	private List<Address> addressList;
 	
 //Getter und Setter
@@ -52,6 +53,13 @@ public class User {
 		this.addressList = addressList;
 	}
 	
+	public String getMailaddress() {
+		return mailaddress;
+	}
+	public void setMailaddress(String mailaddress) {
+		this.mailaddress = mailaddress;
+	}
+	
 //Constructor
 	public User(String firstName, String lastName, String password) {
 		super();
@@ -61,6 +69,14 @@ public class User {
 	}
 	
 	public User(Long id, String firstName, String lastName, String password) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.password = password;
+	}
+	
+	public User(Long id, String firstName, String lastName, String mailaddress, String password) {
 		super();
 		this.id = id;
 		this.firstName = firstName;

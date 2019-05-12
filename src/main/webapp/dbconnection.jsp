@@ -21,7 +21,7 @@
 	<%
 		UserDAO getUser = new UserDAOImpl();
 
-		User user = getUser.getUserByID(1);
+		User user = getUser.getUserByID(2);
 
 		out.println(user.getId() + " " + user.getLastName() + " " + user.getFirstName());
 	%>

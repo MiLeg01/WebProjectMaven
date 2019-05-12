@@ -3,19 +3,83 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Register</title>
+
+<link rel="stylesheet" href="css/misc.css">
+
+<script type ="text/javascript" src="javascript/form-validation.js" async></script>
+ 
 </head>
+
 <body>
 
-<form action="createuser">
+<script>
+test();
+</script>
 
-	Enter first name: <input type="text" name="firstname"> <br>
-	Enter last name: <input type="text" name="lastname"> <br>
-	Enter password: <input type="text" name="password"> <br>
-	Confirm password: <input type="text" name="password"> <br>
-	Create user name: <input type="text" name="username"> <br>
-	<input type="submit">
+<header>
+	image
+</header>
+
+<nav>
+	<a href = "register.html">Register</a>
+	<a href = "login.html">Login</a>
+	<a href="dbconnection.jsp">DBConnection Test</a>
+	<a href="blog.jsp">Blog Test</a>
+</nav>
+
+<section>
+
+<form action="createuser" onsubmit="return form-validation()">
+
+	Enter first name: <input type="text" name="firstname" id = "string1" required> <br>
+	Enter last name: <input type="text" name="lastname" required> <br>
+	Enter password: <input type="password" name="password" required> <br>
+	Confirm password: <input type="password" name="password" required> <br>
+	Create user name: <input type="text" name="username" required> <br>
+	<input type="submit" value="Register">
 
 </form>
 
+<br>
+<br>
+<br>
+<br>
+
+<form onsubmit="return validateNotEmpty()" method="post">
+
+	Testfield: <input type="text" name="string1" id="string1"/>
+	
+	<input type="submit" value="Submit">
+	
+</form>
+
+</section>
+
+<footer>
+
+</footer>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

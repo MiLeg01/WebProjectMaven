@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Start page</title>
+
+<link rel="stylesheet" href="css/misc.css">
+...
+...
+
+</head>
+<body>
+
+<header>
+	image
+</header>
+
+<nav>
+	<a href = "register.html">Register</a>
+	<a href = "login.html">Login</a>
+	<a href="dbconnection.jsp">DBConnection Test</a>
+	<a href="blog.jsp">Blog Test</a>
+</nav>
+
+<section>
+
+</section>
+
+<footer>
+
+</footer>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
