@@ -8,9 +8,7 @@ html {
 body {
 	font-family: 'Georgia', serif;
 	font-size: 12pt;
-	background-color: #efefef;
-	padding: 10px;
-	margin: 0;
+	margin: 0px 0px 0px 20px;
 }
 
 h1 {
@@ -22,19 +20,17 @@ h1 {
 }
 
 header {
-	background: #636769;
+	background-color: grey;
 	position:relative;
 	width: 70%;
-	height: 80px;
-	padding-top: 0;
+	height: 180px;
+	padding-top: 0px;
+	margin-top: 0px;
 
 }
 
 nav {
-	background: #036769;
-	position:relative;
-	width: 70%;
-	height: 120px;
+	width:70%
 }
 section {
 	background: #636769;
@@ -49,3 +45,45 @@ footer {
 	width: 70%;
 	bottom: 0px;
 }
+
+.topnav {
+	background-color: #333;
+	overflow: hidden;
+}
+
+.topnav a:hover {
+	background-color: white;
+	color: black;
+}
+
+.topnav a {
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration:none;
+	font-size: 17px;
+}
+
+.topnav a.active {
+	background-color: #4CAF50;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
