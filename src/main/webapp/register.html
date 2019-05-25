@@ -2,9 +2,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Register</title>
 
 <link rel="stylesheet" href="css/misc.css">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/w3-colors-flat.css">
 
 <script type ="text/javascript" src="javascript/form-validation.js" async></script>
  
@@ -12,33 +13,43 @@
 
 <body>
 
-<script>
-test();
-</script>
-
-<header>
+<header class="w3-flat-clouds w3-border-bottom padding-left">
 	image
 </header>
 
-<nav>
-	<a href = "register.html">Register</a>
-	<a href = "login.html">Login</a>
-	<a href="dbconnection.jsp">DBConnection Test</a>
-	<a href="blog.jsp">Blog Test</a>
+<nav class="w3-flat-clouds padding-left">
+	<div class="w3-container">
+		<a href = "index.html" class="w3-btn w3-black w3-round">
+			Home
+		</a>
+		
+		<a href = "login.html" class="w3-btn w3-black w3-round">
+			Login
+		</a>
+		
+		<a href="dbconnection.jsp" class="w3-btn w3-black w3-round">
+			DBConnection Test
+		</a>
+		<a href="blog.jsp" class="w3-btn w3-black w3-round">
+			Blog Test
+		</a>
+	</div>
 </nav>
 
-<section>
+<section class="w3-white padding-left padding-top">
 
-<form action="createuser" onsubmit="return form-validation()">
-
-	Enter first name: <input type="text" name="firstname" id = "string1" required> <br>
-	Enter last name: <input type="text" name="lastname" required> <br>
-	Enter password: <input type="password" name="password" required> <br>
-	Confirm password: <input type="password" name="password" required> <br>
-	Create user name: <input type="text" name="username" required> <br>
-	<input type="submit" value="Register">
-
-</form>
+	<div class="w3-card-2 w3-padding" style="margin-right:70%; margin-top:50px;">
+		<form action="createuser" onsubmit="return form-validation()">
+		
+			<span style="width:350px;">Enter first name:</span> <input type="text" name="firstname" id = "string1" required> <br>
+			Enter last name: <input type="text" name="lastname" required> <br>
+			Enter password: <input type="password" name="password" required> <br>
+			Confirm password: <input type="password" name="password" required> <br>
+			Create user name: <input type="text" name="username" required> <br>
+			<input type="submit" value="Register">
+		
+		</form>
+	</div>
 
 <br>
 <br>
@@ -55,8 +66,8 @@ test();
 
 </section>
 
-<footer>
-
+<footer class="w3-flat-clouds padding-left">
+	<a href = "impressum.html">Impressum</a>
 </footer>
 
 </body>
